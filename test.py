@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 # 读取图像
-image = cv2.imread("./qqqq.png")
+image = cv2.imread("./test.png")
 ball_color = 'yellow'
 color_dist = {'red': {'Lower': np.array([0, 60, 60]), 'Upper': np.array([6, 255, 255])},
               'blue': {'Lower': np.array([100, 80, 46]), 'Upper': np.array([124, 255, 255])},
