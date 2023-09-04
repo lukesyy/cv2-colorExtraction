@@ -1,11 +1,13 @@
+from test import process_image
+
 from flask import Flask, request, jsonify
-from image_processing import process_image
 
 app = Flask(__name__)
 
 
 @app.route('/api/process_image', methods=['POST'])
 def api_process_image():
+    print(request)
     if 'image' not in request.files:
         return jsonify({'error': 'No image file provided'})
 

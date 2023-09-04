@@ -36,3 +36,6 @@ def process_image(image_path, ball_color):
     avg_color = tuple(map(int, avg_color / len(points)))
     # 返回平均颜色值
     return avg_color
+
+
+process_image('./test.png', 'yellow')
